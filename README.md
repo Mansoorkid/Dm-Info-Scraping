@@ -7,18 +7,31 @@ This project fetches Instagram DMs, calculates the time intervals between messag
 1. Install required libraries:
     ```
     pip install -r requirements.txt
-    python -m spacy download en_core_web_sm
+    or
+    pip install selenium beautifulsoup4
     ```
 
-2. Set up Instagram API access and get your `client_id`, `client_secret`, `redirect_uri`, and `authorization_code`.
+2. Download the appropriate WebDriver for your browser and ensure it's in your system's PATH.
+   ```
+   Chrome: ChromeDriver
+    Firefox: GeckoDriver
+    Edge: EdgeDriver
+   ```
 
-3. Run the script:
+4. Run the script:
     ```
     python main.py
     ```
-
-## Files
-
-- `main.py`: The main script to run the project.
-- `fetch_messages.py`: Contains functions to fetch messages from Instagram.
-- `analyze_messages.py`: Contains functions to analyze the messages.
+5. Output
+   ```
+   The scraped data will be stored in the output directory in the format specified in the script.
+   ```
+Notes
+```
+This script interacts with Instagram's web interface and may be subject to changes in the website structure, which could break the script. Please keep the libraries and WebDriver up-to-date.
+Use this script responsibly and respect Instagram's terms of service.
+```
+License
+```
+MIT License
+```
